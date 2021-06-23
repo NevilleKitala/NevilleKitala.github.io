@@ -35,7 +35,74 @@ First you will need a Github account.
 1. You will find atom works very well with Github.
 
 # Your first HTML webpage.
- Creating an HTML webpage is trivial.
 
+Write or copy the following HTML code into atom:
 
- An HTML tag is a special word or letter surrounded by angle brackets, < and >. You use tags to create HTML elements , such as paragraphs or links. Many elements have an opening tag and a closing tag — for example, a p (paragraph) element has a <p> tag, followed by the paragraph text, followed by a closing </p> tag.
+    ```
+     <!DOCTYPE html>
+     <html>
+     <body>
+
+     <h1>My First Heading</h1>
+
+     <p>My first paragraph.</p>
+
+     </body>
+     </html>
+```
+
+To open run this file in the browser, you will need to save the file on your computer.You can do this by `Select File > Save as` in the atom menu.
+
+Name the file "index.html". This is convention for naming a first file in most projects in coding. You can name it whatever you like if you prefer.
+
+View your file in your Browser(Mac)/ Explorer(Windows). Notice, it has been automatically identified by your computer as a file that can be opened in your default browser.
+
+ Open the saved HTML file in your favourite browser (double click on the file, or right-click - and choose "Open with").
+
+- The `<!DOCTYPE html> `declaration defines that this document is an HTML5 document
+- The `<html>` element is the root element of an HTML page
+- The `<head> `element contains meta information about the HTML page
+- The `<title>` element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+- The `<body>` element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+- The `<h1>` element defines a large heading
+- The `<p>` element defines a paragraph
+
+# What is an HTML Element?
+
+An HTML element is defined by a start tag, some content, and an end tag:
+```
+<tagname> Content goes here... </tagname>
+```
+
+The HTML element is everything from the start tag to the end tag:
+
+resource used to prepare this class: [Reference used, Credit for content. ](https://www.w3schools.com/html/html_intro.asp)
+
+# Further Reading:
+1. [Basics of HTML](https://www.w3schools.com/html/html_basic.asp)
+1. [Basic HTML Elements](https://www.w3schools.com/html/html_elements.asp)
+1. [Basic HTML Attributes](https://www.w3schools.com/html/html_elements.asp)
+1. [Headings](https://www.w3schools.com/html/html_headings.asp)
+1. [Paragraphs](https://www.w3schools.com/html/html_paragraphs.asp)
+
+# Assignment:
+
+Create a simple website. This website should have no styling or javascript. This is so you can practice the basics.
+
+The assignment is to create a website for a juice vendor who wants to create an online menu. Using the resources listed above as reference, the website should have:
+`Three separate webpages: a landing page, an about us page and a menu page.
+Each page should have:`
+  1. A title.
+  1. A link to all other pages.
+  1. A logo.
+  1. Pictures.
+  1. Headings
+  1. Paragraphs
+  1. Proper spacing.
+  1. A footer.
+
+`The Menu Page Should have:`
+1. A table listing at least five menu items.
+1. A picture for each item.
+
+Feel free to use any resources from the internet.
