@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.classes.size > 0 -%}
+    <h2 class="class-list-heading">{{ page.list_title | default: "classes" }}</h2>
+    <ul class="class-list">
+
+      {%- for class in site.classes -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="class-meta">{{ class.date | date: date_format }}</span>
+        <h3>
+          <a class="class-link" href="{{ class.url | relative_url }}">
+            {{ class.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ class.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+  {%- endif -%}
+
+</div>
