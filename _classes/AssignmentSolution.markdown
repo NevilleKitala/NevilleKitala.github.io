@@ -1,12 +1,11 @@
 ---
 layout: class
-title:  "Getting Started with Coding Tools and Version Control"
+title:  "Assignment Solution"
 date:   2021-06-12 09:06:26 +0100
 pair: setup
 comments: true
-embed_exercise: "https://docs.google.com/forms/d/e/1FAIpQLScPrnHAS2olpCKCV97JkjEnrQr1T_D8KbFoqpjMi9oYIBLGWQ/viewform?usp=sf_link"
 
-conclusion: "You have now completed setting yourself up code-wise. Next we will look at using atoms tools to write your first bit of code."
+conclusion: "A good solution will be diverse with alot of content. it will have a good layout for the documentation. It will have atleast three separate pages and plenty of images for the menu."
 ---
 
 
