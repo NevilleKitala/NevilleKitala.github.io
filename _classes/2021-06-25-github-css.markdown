@@ -18,7 +18,7 @@ conclusion: "Great. You have made a start creating your Github project and have 
 <br/>
 
 ### Getting Started with CLI
-In the previous class you set up your Github account. To continue with this lesson please ensure you have correctly set up a [Github](github.com) account. You will also need to install Github CLI() tools, as suggested when you first log in.
+In the previous class you set up your Github account. To continue with this lesson please ensure you have correctly set up a [Github](Github.com) account. You will also need to install Github CLI() tools, as suggested when you first log in.
 
 For the first half of this lesson, we will set up a Github repository, which will help us track changes to the code we write from here on out.
 
@@ -49,14 +49,17 @@ Public
 
 1. We have now organised our folders for this lesson. You have also gained some experience using the terminal for basic tasks. Next we would like to make our Assignment1 folder recognisable by Github, so that all the files inside it are tracked and backup.
 
-1. to do this we can start with our first Github command `git init`. This command should work if you have Github CLI tools installed. If it does not please review the previous lesson document. This command marks your folder as a Github folder, that will match a Github project which you will also be able to view remotely form the Github website. The output resulting should look like this: `Initialized empty Git repository in /Users/--Username--/github/project/Assignment1/.git/` or similar.
+1. to do this we can start with our first Github command `git init`. This command should work if you have Github CLI tools installed. If it does not please review the previous lesson document. This command marks your folder as a Github folder, that will match a Github project which you will also be able to view remotely form the Github website. The output resulting should look like this: `Initialized empty Git repository in /Users/--Username--/Github/project/Assignment1/.git/` or similar.
 
 1. This is all great. However, you will need configure the folder to know where your git repository exists.
 
 <br/>
 
 ### Your First Github Repository
-1. [Create a new repository](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) on [GitHub](github.com). To avoid errors, do not initialise the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. Name the repository Assignment1 and make it public.
+
+You will see me use the word Repository in this section. It is another word to mean` a project folder`. I have used a short form for it, `repo` as well. They all mean the same thing.
+
+1. [Create a new repository](https://docs.Github.com/en/Github/importing-your-projects-to-Github/importing-source-code-to-Github/adding-an-existing-project-to-Github-using-the-command-line) on [GitHub](Github.com). To avoid errors, do not initialise the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. Name the repository Assignment1 and make it public.
   <br/>
   ![create-repo](/assets/images/repo-create.png){:class="img-responsive"}
 1. Next we need to copy the URL of our newly created git repository, to connect our local Assignments folder to the one in Github. We can do this by clicking on the green Clone button on the repo's page, and copying the https link.
@@ -72,7 +75,7 @@ Public
 
 1. Finally to ensure your remote repo and your local repo are communicating correctly: `git push -u origin master`. The git push, submits the changes in your local repository up to the remote repository you specified as the origin.
 
-1. If this command succeeds, you have configured your Github repo correctly. Check your remote repository on github. We expect that nothing has changed.
+1. If this command succeeds, you have configured your Github repo correctly. Check your remote repository on Github. We expect that nothing has changed.
 
 Great! You have just set up your first Github repository!
 
@@ -86,7 +89,7 @@ Leave questions in the comment section below if an instructor is not available.
 
 1. This one is simple. Download the Assignment solution linked at the beginning of this doc and save it in you Assignment1 folder. Unzip the files. Then open this folder in Atom.
 
-1. It is possible now to track what has changed in your project since the last time you did a `git push`. In your terminal, type in `git status`, which will show a list of all the files that you have added. mY output looked like:
+1. It is possible now to track what has changed in your project since the last time you did a `git push`. In your terminal, type in `git status`, which will show a list of all the files that you have added. My output looked like:
 
   ```
   nevillekitala Assignment1 % git status
@@ -102,16 +105,21 @@ Leave questions in the comment section below if an instructor is not available.
 
 
 1. This basically just says, We have some files that are not being tracked(Never uploaded to Github).
-  1. The first step is to track our files. do `git add .` the full stop adds all untracked files to a list of tracked files. Only tracked files will be sent to github.
+  1. The first step is to track our files. do `git add .` the full stop adds all untracked files to a list of tracked files. Only tracked files will be sent to Github.
 
   1. No we need to group all these files, and add them to a Github commit: This is basically a marker in your repo that shows that certain files were changed at a certain time. Create a commit by `git commit -m"Making first commit for Github"`.  great. Now if you check the status of your repository in the command line: ` git status` you should see:
 
-  ```
-  On branch main
-  Your branch is up to date with 'origin/main'.
 
-  nothing to commit, working tree clean
-  ```
+    ```
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+
+    ```
+
+1. To submit it to Github: `git push`. No if you go to Github in your browser. Expect to see that your code is submitted to the repository you had in Github.
 
 1. This shows that your repository has been configured correctly.
 
