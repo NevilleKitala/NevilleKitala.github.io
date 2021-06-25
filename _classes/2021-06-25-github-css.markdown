@@ -88,17 +88,30 @@ Leave questions in the comment section below if an instructor is not available.
 
 1. It is possible now to track what has changed in your project since the last time you did a `git push`. In your terminal, type in `git status`, which will show a list of all the files that you have added. mY output looked like:
 
-```
-nevillekitala Assignment1 % git status
-On branch master
+  ```
+  nevillekitala Assignment1 % git status
+  On branch master
 
-No commits yet
+  No commits yet
 
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-Assignment1/
-```
-**Feel free to ask question here as this can all be confusing the first time around**
+  Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+  Assignment1/
+  ```
+  **Feel free to ask question here as this can all be confusing the first time around**
+
+
+1. This basically just says, We have some files that are not being tracked(Never uploaded to Github).
+  1. The first step is to track our files. do `git add .` the full stop adds all untracked files to a list of tracked files. Only tracked files will be sent to github.
+
+  1. No we need to group all these files, and add them to a Github commit: This is basically a marker in your repo that shows that certain files were changed at a certain time. Create a commit by `git commit -m"Making first commit for Github"`.  great. Now if you check the status of your repository in the command line: ` git status` you should see:
+
+  ```
+  On branch main
+  Your branch is up to date with 'origin/main'.
+
+  nothing to commit, working tree clean
+  ```
 
 1. This shows that your repository has been configured correctly.
 
