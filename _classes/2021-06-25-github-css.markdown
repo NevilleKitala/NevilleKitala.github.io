@@ -142,20 +142,21 @@ CSS is used to define styles for your web pages, including the design, layout an
 
 To see this in action add the code below right before the closing `</head>` tag of the index file in you assignment1 folder.
 
-```<style>
-body {
-  background-color: lightblue;
-}
+```
+<style>
+  body {
+    background-color: lightblue;
+  }
 
-h1 {
-  color: blue;
-  text-align: center;
-}
+  h1 {
+    color: blue;
+    text-align: center;
+  }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
 </style>
 
 ```
