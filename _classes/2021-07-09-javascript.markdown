@@ -7,7 +7,7 @@ solutions: "/solutions/Assignment2.zip"
 
 review: "https://docs.google.com/forms/d/e/1FAIpQLScfBZSY9JGxR9hw2eW4d7mIqVzl6_Q3ZIlKwdX42zgrVke1QQ/viewform?embedded=true"
 
-conclusion: "Great. You have made a start creating your Github project and have learnt about CSS. You are basically a programmer now! Congratulations"
+conclusion: "Great. Javascript is a widely used coding languages with plenty of resources around the web. it would be prudent to put some time into using it to modify the website in your past time."
 ---
 
 
@@ -75,7 +75,7 @@ We are going to change the background image of the intro section of our landing 
   1. You can find all images in the Assets folder of the solution for last weeks assignment. Find the name of the image you want to replace our background with, and save its location in a variable as well.
   1. replace the image using javascript.
 
-## Exercise 3
+## Assignment
 If you were able to successfully finish the previous exercise
   1. for bonus points, replace the background image from the previous exercise with a new image every 10 seconds.
 
