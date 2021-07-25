@@ -49,18 +49,24 @@ JavaScript ("JS" for short) is a full-fledged dynamic programming language that 
 let us add this code into the javascript file:
 ```
 
-const h1 = document.querySelector('h1');
+let h1 = document.querySelector('h1');
 h1.textContent = 'Replacing the headings in the website!';
 
 ```
 
 ## What did you observe
-We should see a `h1` in the index page changed to`Replacing the headings in the website!`.
+We should see a `h1` in the index page changed to` Replacing the headings in the website!`.
 using a function called querySelector(), you have grabbed a reference to a h1 tag and stored it in a variable called h1.
 
 This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
 
-Following that, the code set the value of the myHeading variable's textContent property (which represents the content of the heading) to Hello world!.
+Following that, set the value of the `h1` variable's `textContent` property (which represents the content of the H1) to `Hello world!`.
+
+```
+
+h1.textContent = 'Hello world!';
+
+```
 
 great. You have just got started writing your first bit of javascript.
 
