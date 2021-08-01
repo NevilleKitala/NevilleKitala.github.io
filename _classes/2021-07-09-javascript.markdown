@@ -20,13 +20,11 @@ conclusion: "Great. Javascript is a widely used coding languages with plenty of 
 In other words it gives you a Library of compiled css styles that you can link into your webpage and link to your changes as you please. This makes it easier for developers to maintain a consistent style through out their designs.
 
 ## Exercise 1:
-1. Extend the solution from the previous week to include bootstrap styles by.
+  1. Extend the solution from the previous week to include bootstrap styles by:
+    1. change the background colour of the navigation bar to use bootstrap.
+    1. Change the table to a grid of cards, which should show the image, the price and a short description of the different juices.
+    1. Every time the word <em>juice</em> is mentioned, colour it green.
 
-  1. change the background colour of the navigation bar to use bootstrap.
-  1. Change the table to a grid of cards, which should show the image, the price and a short description of the different juices.
-  1. Every time the word <em>juice</em> is mentioned, colour it green.
-  1. Every time the word <em> Natalie'e </em>
-  make use of containers from bootstrap to replace the text class used for divs in the solution.
 
 # Javascript:
 ## What is javascript:
@@ -85,6 +83,46 @@ We are going to change the background image of the intro section of our landing 
 If you were able to successfully finish the previous exercise
   1. for bonus points, replace the background image from the previous exercise with a new image every 10 seconds.
 
+## Assignment Solution:
+
+```
+// Solution for assignment:
+
+let background_1_location = "Assets/packing.jpeg";
+let background_2_location = "Assets/juice-bar.jpeg";
+let intro = document.getElementById("intro");
+
+background = background_1_location;
+
+// DRY: Do not Repeat Yourself
+function changeBackground(){
+  intro.style.backgroundImage = "url('"+background+"')";
+  if(background == "Assets/juice-bar.jpeg" ){
+    background = background_1_location;
+  }
+  else{
+    background = background_2_location;
+  }
+}
+
+setInterval(function() {
+    changeBackground();
+}, 10000)
+```
+
+# Discussion:
+
+I defined 3 variables. `background_1_location`, `background_2_location` and `intro`.
+I have created a function called `changeBackground`, which evaluates which background to change to.
+I used `setInterval` which is an in-built function for running a command at certain intervals, for example in this case it is used to run the function defined above every ten seconds.
+
+### Exercise 2
+We are going to change the content of the text section in our landing page.
+
+ 1. Using what you have learn:
+  1. Find where the id of the text container on our landing page and assign it to a variable.
+  1. Search
+  1. replace the image using javascript.
 # Further Reading:
 1. [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 1. [Getting started with javascript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#adding_a_personalized_welcome_message)
