@@ -74,8 +74,8 @@ Now for a quick [crash course](https://developer.mozilla.org/en-US/docs/Learn/Ge
 We are going to change the background image of the intro section of our landing page.
 
  1. Using what you have learn:
-  1. Find where the image is selected defined.
-  1. Start by trying to reference the image/ image container in a variable in our javascript
+  1. Find where the image background is defined in the CSS.
+  1. Start by trying to reference the image container in a variable in our javascript
   1. You can find all images in the Assets folder of the solution for last weeks assignment. Find the name of the image you want to replace our background with, and save its location in a variable as well.
   1. replace the image using javascript.
 
